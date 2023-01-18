@@ -12,8 +12,8 @@ today=(mnth,dy)
 data=pandas.read_csv(r"C:\Users\Acer\Downloads\birthdays.csv")
 dict={(data_row.month,data_row.day):data_row for(index,data_row) in data.iterrows() } 
 if today in dict:
-    email="testingwithconfidence@gmail.com" 
-    password="jkojxeekfbotfhjm"  
+    email="your_email" 
+    password="your_password"  
     birthday_person=dict[today]
     with open(r"C:\Users\Acer\Downloads\letter_templates\letter_1.txt","r") as letter:
         info=letter.read() 
